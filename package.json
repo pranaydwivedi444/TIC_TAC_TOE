@@ -1,0 +1,19 @@
+{
+  "name": "tic_tac_toe",
+  "version": "1.0.0",
+  "description": "Tic Tac toe game using HTML CSS JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pranaydwivedi444/TIC_TAC_TOE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pranaydwivedi444/TIC_TAC_TOE/issues"
+  },
+  "homepage": "https://github.com/pranaydwivedi444/TIC_TAC_TOE#readme"
+}
