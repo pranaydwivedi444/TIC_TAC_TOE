@@ -1,0 +1,257 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  height: 8vh;
+  background-color: black;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background: url(/src/img/5590822.jpg);
+}
+
+.navbar li {
+  color: white;
+  text-shadow: 1px 1px 2px black;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  background-color: rgb(245, 245, 245);
+  margin-top: 3rem;
+}
+.play-container {
+  /* margin-top: 0.5rem; */
+  display: grid;
+  grid-template-columns: repeat(3, 10vw);
+  grid-template-rows: repeat(3, 10vw);
+  margin: 2rem;
+}
+
+.box {
+  /* margin: 0; */
+  border: 2px solid black;
+  font-size: 8vw;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box:hover {
+  background-color: rgb(179, 168, 168);
+}
+
+.img-box img {
+  /* display: none; */
+  width: 0;
+  transition: width 1s ease-in-out;
+}
+
+.game-info {
+  padding: 40px 40px;
+}
+.br-0 {
+  border-right: 0;
+}
+.bl-0 {
+  border-left: 0;
+}
+.bt-0 {
+  border-top: 0;
+}
+.bb-0 {
+  border-bottom: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn:visited,
+.btn:link {
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 1rem 3rem;
+  margin: 10px;
+  border-radius: 10rem;
+  /* box-shadow: 3px 7px 22px black; */
+  display: inline-block;
+  font-size: 1.5rem;
+  background-color: rgb(0, 255, 119);
+  color: rgb(0, 0, 0);
+}
+.btn:hover {
+  box-shadow: 0rem 1rem 2rem black;
+  transform: translateY(-3px);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0rem 0.5rem 10rem black;
+}
+
+.info {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .game-container {
+    flex-wrap: wrap;
+  }
+  .game-info h1 {
+    font-size: 1.5rem;
+  }
+  .btn:visited,
+  .btn:link {
+    font-size: 1.5rem;
+    padding: 0.5rem 1.5rem;
+  }
+  .play-container {
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 20vw);
+  }
+}
+/* temp css */
+/*
+COLORS:
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  /* color: #777; */
+  padding: 3rem;
+  box-sizing: border-box;
+}
+
+.header-temp {
+  position: relative;
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, #7ed56f8f, #28b48587),
+    url(../img/hero.webp);
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /* transition: display 2s ease-in-out; */
+}
+
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+
+.header__logo {
+  height: 4rem;
+}
+
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.heading-primary {
+  color: white;
+  /* display: block; */
+
+  text-transform: uppercase;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  letter-spacing: 3.5rem;
+  font-size: 6rem;
+  font-weight: 400;
+  animation: moveToRight 2s ease-in-out;
+}
+.heading-primary--sub {
+  display: block;
+  letter-spacing: 1.5rem;
+  font-size: 3.5rem;
+  font-weight: 400;
+  animation: moveToLeft 2s ease-in-out;
+}
+
+@keyframes moveToRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveToLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* .btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0rem 0.5rem 10rem black;
+} */
+
+@media screen and (max-width: 900px) {
+  .header-temp {
+    /* display: flex;
+    flex-wrap: wrap; */
+    font-size: 10vh;
+  }
+  .heading-primary--sub {
+    display: block;
+    letter-spacing: 0.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    animation: moveToLeft 2s ease-in-out;
+  }
+  .heading-primary--main {
+    display: block;
+    letter-spacing: 0.5rem;
+    font-size: 3rem;
+    font-weight: 400;
+    animation: moveToRight 2s ease-in-out;
+  }
+  .wingif {
+    width: 1rem;
+  }
+}

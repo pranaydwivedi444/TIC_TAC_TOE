@@ -4,7 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/CSS/style.CSS" />
+    <script defer src="/src/JS/script.js"></script>
     <title>TIC TAC TOE</title>
   </head>
-  <body></body>
+  <body>
+    <div class="header-temp">
+      <div class="header__logo-box">
+        <img src="src/img/excited.gif" alt="logo-white" class="header__logo" />
+      </div>
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">PLAY</span>
+          <span class="heading-primary--sub">TIC TAC TOE</span>
+        </h1>
+        <a class="btn btn-start" href="#">START</a>
+      </div>
+    </div>
+    <header class="main-header hidden">
+      <div>
+        <ul class="navbar">
+          <li>TIC TAC TOE</li>
+        </ul>
+      </div>
+    </header>
+    <div class="game-container hidden">
+      <div class="play-container">
+        <div class="box" data-num="1"></div>
+        <div class="box" data-num="2"></div>
+        <div class="box" data-num="3"></div>
+        <div class="box" data-num="4"></div>
+        <div class="box" data-num="5"></div>
+        <div class="box" data-num="6"></div>
+        <div class="box" data-num="7"></div>
+        <div class="box" data-num="8"></div>
+        <div class="box" data-num="9"></div>
+      </div>
+      <div class="game-info">
+        <h1>Welcome to Tic-tac-Toe</h1>
+        <div class="status">
+          <span class="info">Turn For X</span>
+          <a class="btn .btn--white btn-reset" href="#">Reset</a>
+        </div>
+        <div class="img-box">
+          <img
+            class="wingif"
+            src="/src/img/excited.gif"
+            alt="excited winning gif"
+          />
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
