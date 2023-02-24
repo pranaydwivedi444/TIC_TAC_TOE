@@ -10,7 +10,7 @@ Bugs needs to be fixed - Audio not playing (uncaught promise error)
 
 ## Introduction
 
-This is a Tic Tac Toe game built with HTML, CSS, and JavaScript. It allows users to play the classic game of Tic Tac Toe against the computer.
+This is a Tic Tac Toe game built with HTML, CSS, and JavaScript. It allows users to play the classic game of Tic Tac for 2 players locally.
 
 ## Features
  - TIC_TAC_TOE provides a user-friendly interface for playing the game, with clear instructions and a simple, intuitive design.
