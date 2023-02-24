@@ -6,7 +6,9 @@ Bugs needs to be fixed - Audio not playing (uncaught promise error)
 
 
 
-# Tic Tac Toe
+# Tic Tac Toe DEMO
+![TIC TAC TOE](https://user-images.githubusercontent.com/48515987/221224525-bb3f1ae2-4a52-4dc8-9b61-90f808478280.gif)
+
 
 ## Introduction
 
